@@ -1,5 +1,5 @@
 {% set name = "glasbey" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f6bd5e539c12edfa1ec939a4ea00410348eecfa0a96aa72179c30d30ae59a1e2
+  sha256: 44b9357dd6cba9d76ab6d3e2fe36d4f2ebd4abfe1456f4de959b7ed8935f504f
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - numba >=0.56
     - matplotlib-base >=3.5
     - colorspacious
-    
+
 test:
   imports:
     - glasbey
@@ -35,7 +35,7 @@ test:
 
 about:
   home: https://github.com/lmcinnes/glasbey
-  summary: 'Algorithmically generate categorical colour palettes for Python'
+  summary: Algorithmically generate categorical colour palettes for Python
   description: |
     The glasbey library allows for the algorithmic creation of colour palettes designed for 
     use with categorical data using techniques from the paper Colour Displays for Categorical Images 
