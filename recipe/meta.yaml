@@ -1,5 +1,5 @@
 {% set name = "glasbey" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 44b9357dd6cba9d76ab6d3e2fe36d4f2ebd4abfe1456f4de959b7ed8935f504f
+  sha256: d4af86040b918fd510fcfed111d9fe3d86e9c5349d6304bc860470a010d5d242
 
 build:
   noarch: python
@@ -24,6 +24,7 @@ requirements:
     - numba >=0.56
     - matplotlib-base >=3.5
     - colorspacious
+    - scikit-learn
 
 test:
   imports:
