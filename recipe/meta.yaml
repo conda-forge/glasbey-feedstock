@@ -24,6 +24,7 @@ requirements:
     - numba >=0.56
     - matplotlib-base >=3.5
     - colorspacious
+    - scikit-learn
 
 test:
   imports:
