@@ -1,14 +1,14 @@
 {% set python_min = "3.10" %}
 {% set name = "glasbey" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8f2c26cc7bb5ae2b8cee7c9c93b28d0edabf5e617a0f152c7519fa981ec79cda
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 8d4761f08e5aff00bbbe4fd9e57ae186f93a583ed457e9e8ebe8d006c9de7e5b
 
 build:
   noarch: python
